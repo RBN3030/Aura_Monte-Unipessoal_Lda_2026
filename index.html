@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Monte — Silvicultura Preventiva e Jardinagem em Lafões</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Aura Monte - Unipessoal Lda. Serviços profissionais de silvicultura urbana, preventiva, limpeza de terrenos e florestas, e jardinagem na região de Oliveira de Frades, Vouzela, S. Pedro do Sul e Lafões." />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aura Monte — Silvicultura Preventiva e Jardinagem em Lafões" />
+  <meta property="og:description" content="Serviços profissionais de silvicultura urbana, preventiva, limpeza de terrenos e florestas, e jardinagem na região de Oliveira de Frades, Vouzela, S. Pedro do Sul e Lafões." />
+  <meta property="og:image" content="https://i.postimg.cc/yNQf5gWm/aura-monte-2026-04-19.jpg" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aura Monte — Silvicultura Preventiva e Jardinagem em Lafões" />
+  <meta name="twitter:description" content="Serviços profissionais de silvicultura urbana, preventiva, limpeza de terrenos e florestas, e jardinagem na região de Oliveira de Frades, Vouzela, S. Pedro do Sul e Lafões." />
+  <meta name="twitter:image" content="https://i.postimg.cc/yNQf5gWm/aura-monte-2026-04-19.jpg" />
+
+  <!-- Google Fonts - Inter & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuração das Cores Oficiais da Aura Monte -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              green: {
+                50: '#F8FAF5',
+                100: '#D8E2DC',
+                200: '#c6e1d3',
+                300: '#9bc8b1',
+                400: '#74C69D',
+                500: '#52B788',
+                600: '#2D6A4F',
+                700: '#1c4a35',
+                850: '#133325',
+                900: '#1B4332',
+                950: '#0a1c14'
+              },
+              gold: {
+                50: '#fefcf3',
+                500: '#FFB703',
+                600: '#e09f00',
+                700: '#C78B00'
+              },
+              orange: {
+                500: '#FB8500'
+              }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1B4332;
+      background-color: #F8FAF5;
+    }
+    .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+  </style>
+
+  <!-- Biblioteca de Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="antialiased selection:bg-brand-green-500 selection:text-white">
+
+  <!-- ==================== LOGO & MENU DE NAVEGAÇÃO ==================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-transparent py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white/90 backdrop-blur-md rounded-2xl md:rounded-3xl border border-brand-green-100/30 px-4 sm:px-6 py-3 shadow-md flex items-center justify-between">
+        
+        <!-- Logótipo e Nome Fiscal -->
+        <a href="#inicio" class="flex items-center gap-2.5 group transition-transform hover:scale-[1.01]">
+			<img src="https://i.postimg.cc/yNQf5gWm/aura-monte-2026-04-19.jpg" alt="AURA MONTE logo" class="h-9 w-9 object-contain transition-transform group-hover:rotate-12 duration-300" />
+			<div class="flex flex-col">
+				<span class="text-lg font-display font-black leading-none tracking-tight text-brand-green-950 uppercase">
+				AURA MONTE
+				</span>
+				<span class="text-[9px] font-bold text-brand-gold-600 tracking-wider uppercase">
+				Silvicultura Lda.
+				</span>
+			</div>
+		</a>
+
+
+        <!-- Links de Navegação (Desktop) -->
+        <nav class="hidden md:flex items-center gap-7 lg:gap-9 text-xs sm:text-sm font-semibold tracking-wide text-brand-green-950/80">
+          <a href="#inicio" class="hover:text-brand-green-600 hover:scale-105 transition-all">Início</a>
+          <a href="#servicos" class="hover:text-brand-green-600 hover:scale-105 transition-all">Serviços</a>
+          <a href="#cobertura" class="hover:text-brand-green-600 hover:scale-105 transition-all">Zonas de Atuação</a>
+          <a href="#sobre" class="hover:text-brand-green-600 hover:scale-105 transition-all">Sobre Nós</a>
+          <a href="#contactos" class="hover:text-brand-green-600 hover:scale-105 transition-all">Contactos</a>
+        </nav>
+
+        <!-- Ações do Cabeçalho -->
+        <div class="flex items-center gap-3">
+          <!-- Facebook Oficial -->
+		  
+		<a href="https://www.facebook.com/people/Aura-Monte-Unip-Lda/61589313599683/" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex p-2 rounded-xl text-[#1877f2] bg-[#e7f3ff] hover:bg-[#1877f2] hover:text-white transition-all border border-[#d8e7f9]" title="Visite a página oficial no Facebook">
+			<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+			</svg>
+		</a>
+			
+
+
+          <!-- Botão Falar Connosco -->
+          <a href="#contactos" class="hidden lg:flex items-center gap-1.5 px-4 py-2 rounded-full font-semibold text-xs uppercase tracking-wider bg-brand-green-600 text-white hover:bg-brand-green-700 hover:scale-[1.02] shadow-sm transition-all">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            Contactar
+          </a>
+
+          <!-- Menu Mobile Toggle -->
+          <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl hover:bg-slate-100 text-slate-700 transition-all border border-slate-200" aria-label="Abrir Menu">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Menu Lateral Mobile -->
+    <div id="mobile-menu" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden p-4 flex justify-end">
+      <div class="h-full bg-white rounded-3xl w-full max-w-xs shadow-2xl p-6 flex flex-col justify-between border border-slate-100">
+        <div>
+          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+            <div class="flex items-center gap-2">
+              <svg class="h-8 w-8 text-brand-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22V12" />
+                <path d="m8 12 4-4 4 4" />
+                <path d="m7 16 5-5 5 5" />
+              </svg>
+              <span class="font-display font-black text-brand-green-950 uppercase tracking-tight text-base">Aura Monte</span>
+            </div>
+            <button id="close-menu-btn" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition-colors" aria-label="Fechar Menu">
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <nav class="flex flex-col gap-4 mt-8 text-sm font-semibold text-brand-green-950">
+            <a href="#inicio" class="p-2 rounded-xl hover:bg-slate-50 transition-colors">Início</a>
+            <a href="#servicos" class="p-2 rounded-xl hover:bg-slate-50 transition-colors">Serviços</a>
+            <a href="#cobertura" class="p-2 rounded-xl hover:bg-slate-50 transition-colors">Zonas de Atuação</a>
+            <a href="#sobre" class="p-2 rounded-xl hover:bg-slate-50 transition-colors">Sobre Nós</a>
+            <a href="#contactos" class="p-2 rounded-xl hover:bg-slate-50 transition-colors">Contactos</a>
+          </nav>
+        </div>
+
+        <div class="border-t border-slate-100 pt-6 space-y-4">
+          <div class="flex gap-3 items-center">
+            <div class="p-2.5 bg-brand-green-100 text-brand-green-600 rounded-xl">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase font-bold text-slate-400">Telemóvel</p>
+              <p class="text-sm font-bold text-brand-green-950">+351 927 008 602</p>
+            </div>
+          </div>
+          <a href="#contactos" class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-brand-gold-500 text-brand-green-950 font-bold hover:bg-brand-gold-600 transition-colors text-xs uppercase tracking-wider">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            Falar Connosco
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO / BANNER PRINCIPAL ==================== -->
+  <section id="inicio" class="relative min-h-[92vh] flex items-center justify-center pt-24 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=1600"
+        alt="Floresta Limpa Aura Monte"
+        class="w-full h-full object-cover select-none"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-green-950/95 via-brand-green-950/70 to-brand-green-950/45"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 text-center sm:text-left">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-white border border-white/20 mb-6 text-xs sm:text-sm font-medium">
+          <i data-lucide="map-pin" class="w-4 h-4 text-brand-gold-500 animate-bounce"></i>
+          <span>Zona de Oliveira de Frades, Vouzela, S. Pedro do Sul & Região de Lafões</span>
+        </div>
+
+        <h1 class="text-5xl sm:text-6xl md:text-[80px] font-display font-black tracking-tighter text-white leading-[0.92] uppercase">
+          CUIDAMOS DA <span class="text-brand-green-300">TERRA</span>,<br />
+          PRESERVAMOS O <span class="text-brand-gold-500">FUTURO</span>.
+        </h1>
+
+        <p class="mt-6 text-base sm:text-lg md:text-xl text-slate-200/90 font-light max-w-2xl leading-relaxed">
+          Especialistas locais em silvicultura preventiva, limpeza de terrenos florestais rústicos e manutenção profissional de relvados e jardins.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          <a href="#contactos" class="px-8 py-4 bg-brand-gold-500 text-brand-green-950 font-display font-bold rounded-xl text-center shadow-lg hover:bg-brand-gold-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 tracking-wide">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+            Ver Contactos
+          </a>
+
+          <a href="tel:+351927008602" class="px-8 py-4 bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-white/45 text-white font-display font-bold rounded-xl text-center shadow-sm transition-all duration-200 flex items-center justify-center gap-2">
+            <i data-lucide="phone-call" class="w-5 h-5 text-brand-gold-500"></i>
+            <span>Ligar: +351 927 008 602</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVIÇOS OFERECIDOS ==================== -->
+  <section id="servicos" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-sm font-semibold text-brand-green-600 uppercase tracking-widest bg-brand-green-50 px-3 py-1.5 rounded-full inline-block mb-3 border border-brand-green-100">
+        A Nossa Especialidade
+      </span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-brand-green-900 tracking-tighter uppercase">
+        Serviços Florestais e de Jardinagem Profissionais
+      </h2>
+      <p class="mt-4 text-base sm:text-lg text-slate-600">
+        Dispomos de equipamentos mecânicos adequados para trabalhos florestais exigentes e intervenções urbanas de alta sensibilidade.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Serviço 1: Limpeza -->
+      <div class="bg-white rounded-3xl border border-brand-green-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between p-6 sm:p-8">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[10px] font-bold text-brand-green-600 uppercase tracking-widest bg-brand-green-50 px-2.5 py-1 rounded-full border border-brand-green-100">
+              Prevenção de Incêndios
+            </span>
+            <div class="p-3 bg-brand-green-100/60 text-brand-green-600 rounded-2xl">
+              <i data-lucide="flame-kindling" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-display font-black text-brand-green-900 uppercase tracking-tight mb-2">
+            Limpeza de Terrenos e Florestas
+          </h3>
+          <p class="text-slate-600 text-sm font-light mb-6">
+            Prevenção de incêndios florestais e controlo de mato denso em conformidade com as diretrizes legais.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-slate-50">
+          <button class="ver-mais-btn text-brand-green-600 hover:text-brand-green-700 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5" data-service-id="limpeza-terrenos" aria-label="Ver mais sobre Limpeza de Terrenos e Florestas">
+            Ver Mais
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Serviço 2: Jardinagem -->
+      <div class="bg-white rounded-3xl border border-brand-green-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between p-6 sm:p-8">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[10px] font-bold text-brand-green-600 uppercase tracking-widest bg-brand-green-50 px-2.5 py-1 rounded-full border border-brand-green-100">
+              Particulares e Empresas
+            </span>
+            <div class="p-3 bg-brand-green-100/60 text-brand-green-600 rounded-2xl">
+              <i data-lucide="flower2" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-display font-black text-brand-green-900 uppercase tracking-tight mb-2">
+            Manutenção de Jardins
+          </h3>
+          <p class="text-slate-600 text-sm font-light mb-6">
+            Cortes de relvado periódicos, fertilização de solos, sementeiras, podas estéticas e limpeza de canteiros.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-slate-50">
+          <button class="ver-mais-btn text-brand-green-600 hover:text-brand-green-700 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5" data-service-id="manutencao-jardins" aria-label="Ver mais sobre Manutenção de Jardins">
+            Ver Mais
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Serviço 3: Áreas Públicas -->
+      <div class="bg-white rounded-3xl border border-brand-green-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between p-6 sm:p-8">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[10px] font-bold text-brand-green-600 uppercase tracking-widest bg-brand-green-50 px-2.5 py-1 rounded-full border border-brand-green-100">
+              Espaços Comunitários
+            </span>
+            <div class="p-3 bg-brand-green-100/60 text-brand-green-600 rounded-2xl">
+              <i data-lucide="map-pin-house" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-display font-black text-brand-green-900 uppercase tracking-tight mb-2">
+            Manutenção de Áreas Públicas
+          </h3>
+          <p class="text-slate-600 text-sm font-light mb-6">
+            Serviços para freguesias e baldios: limpeza de bermas de estradas, desbaste de vegetação e percursos pedestres.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-slate-50">
+          <button class="ver-mais-btn text-brand-green-600 hover:text-brand-green-700 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5" data-service-id="areas-publicas" aria-label="Ver mais sobre Manutenção de Áreas Públicas">
+            Ver Mais
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Serviço 4: Podas -->
+      <div class="bg-white rounded-3xl border border-brand-green-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between p-6 sm:p-8">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[10px] font-bold text-brand-green-600 uppercase tracking-widest bg-brand-green-50 px-2.5 py-1 rounded-full border border-brand-green-100">
+              Especializado e Seguro
+            </span>
+            <div class="p-3 bg-brand-green-100/60 text-brand-green-600 rounded-2xl">
+              <i data-lucide="scissors" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-display font-black text-brand-green-900 uppercase tracking-tight mb-2">
+            Poda de Árvores de Alto Porte
+          </h3>
+          <p class="text-slate-600 text-sm font-light mb-6">
+            Remoção de galhos secos eminentes, podas de árvores frutíferas e cortes especializados de segurança vertical.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-slate-50">
+          <button class="ver-mais-btn text-brand-green-600 hover:text-brand-green-700 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5" data-service-id="poda-arvores" aria-label="Ver mais sobre Poda de Árvores de Alto Porte">
+            Ver Mais
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Serviço 5: Queimadas -->
+      <div class="bg-white rounded-3xl border border-brand-green-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between p-6 sm:p-8">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[10px] font-bold text-brand-green-600 uppercase tracking-widest bg-brand-green-50 px-2.5 py-1 rounded-full border border-brand-green-100">
+              Operação Certificada
+            </span>
+            <div class="p-3 bg-brand-green-100/60 text-brand-green-600 rounded-2xl">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-display font-black text-brand-green-900 uppercase tracking-tight mb-2">
+            Queimadas e Queimas Autorizadas
+          </h3>
+          <p class="text-slate-600 text-sm font-light mb-6">
+            Queima de sobrados agrícolas em períodos permitidos com acompanhamento seguro e respeito à legalidade.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-slate-50">
+          <button class="ver-mais-btn text-brand-green-600 hover:text-brand-green-700 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5" data-service-id="queimadas" aria-label="Ver mais sobre Queimadas e Queimas Autorizadas">
+            Ver Mais
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Alerta de Faixa de Proteção -->
+    <div class="mt-16 p-8 sm:p-10 bg-brand-green-900 text-white rounded-3xl relative overflow-hidden shadow-xl">
+      <div class="absolute inset-0 opacity-15">
+        <img
+          src="https://images.unsplash.com/photo-1558904541-efa8c1a68aa2?auto=format&fit=crop&q=80&w=1200"
+          alt="Jardinagem"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-block px-3 py-1.5 rounded-full bg-brand-gold-500 text-brand-green-950 text-xs font-mono font-bold uppercase tracking-wide">
+            ALERTA LEGAL: FAIXAS DE LIMPEZA
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white tracking-tight uppercase leading-none">
+            Cumprimento da Faixa de Segurança de 50 Metros
+          </h3>
+          <p class="text-slate-200 text-sm sm:text-base font-light leading-relaxed">
+            Gestão rigorosa de biomassa florestal numa faixa de 50 metros à volta de habitações para o cumprimento escrupuloso das leis de prevenção contra incêndios rurais em Portugal.
+          </p>
+          <a href="#contactos" class="inline-flex items-center gap-2 text-sm text-brand-gold-500 font-semibold hover:underline">
+            <span>Ver detalhes de contacto</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+        <a href="#contactos" class="w-full md:w-auto shrink-0 px-6 py-3 bg-brand-green-600 hover:bg-brand-green-700 text-white text-sm font-semibold rounded-2xl text-center shadow transition-all flex items-center justify-center gap-2">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          Entrar em Contacto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ÁREA DE COBERTURA / MAPA ==================== -->
+  <section id="cobertura" class="py-24 bg-brand-green-50/50 border-t border-b border-brand-green-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-sm font-semibold text-brand-green-600 uppercase tracking-widest bg-brand-green-50 px-3 py-1.5 rounded-full inline-block mb-3 border border-brand-green-100">
+          Proximidade e Agilidade
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-brand-green-900 tracking-tighter uppercase">
+          Área de Atuação na Região de Lafões
+        </h2>
+        <p class="mt-4 text-slate-600">
+          Respondemos de forma rápida e eficiente e conhecemos as especificidades naturais e os caminhos de toda a bacia de Lafões.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        
+        <!-- Freguesias e Região -->
+        <div class="lg:col-span-4 flex flex-col justify-between gap-6">
+          <div class="space-y-4">
+            
+            <div class="p-5 bg-white rounded-2xl shadow-sm border border-brand-green-100/60">
+              <div class="flex items-center gap-2.5 text-brand-green-950">
+                <i data-lucide="map-pin" class="text-brand-green-600"></i>
+                <h4 class="font-display font-bold text-lg">Oliveira de Frades</h4>
+              </div>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                A nossa sede. Prestamos serviços rápidos tanto na vila como em todas as freguesias adjacentes (Urrô, Pinheiro, Arcozelo das Maias, etc.).
+              </p>
+            </div>
+
+            <div class="p-5 bg-white rounded-2xl shadow-sm border border-brand-green-100/60">
+              <div class="flex items-center gap-2.5 text-brand-green-950">
+                <i data-lucide="map-pin" class="text-brand-green-600"></i>
+                <h4 class="font-display font-bold text-lg">Vouzela</h4>
+              </div>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                Perto do coração da região, apoiamos proprietários rurais em Vouzela, Campia, Alcofra e zonas montanhosas de queima controlada.
+              </p>
+            </div>
+
+            <div class="p-5 bg-white rounded-2xl shadow-sm border border-brand-green-100/60">
+              <div class="flex items-center gap-2.5 text-brand-green-950">
+                <i data-lucide="map-pin" class="text-brand-green-600"></i>
+                <h4 class="font-display font-bold text-lg">São Pedro do Sul</h4>
+              </div>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                Cobrimos as áreas termais e montanhosas, prestando serviços dedicados de desbaste florestal e corte de madeira.
+              </p>
+            </div>
+
+            <div class="p-5 bg-white rounded-2xl shadow-sm border border-brand-green-100/60">
+              <div class="flex items-center gap-2.5 text-brand-green-950">
+                <i data-lucide="map-pin" class="text-brand-green-600"></i>
+                <h4 class="font-display font-bold text-lg">Região de Lafões</h4>
+              </div>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                Toda a bacia e vales da região de Lafões, garantindo resposta ágil e conhecimento profundo das exigências florestais locais.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="lg:col-span-8 bg-white p-4 rounded-3xl border border-brand-green-100 shadow-sm flex flex-col justify-between min-h-[420px]">
+          <div class="w-full h-full rounded-2xl overflow-hidden border border-slate-100 relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48348.61803738096!2d-8.158141416739988!3d40.73379653896582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd236fa785e05a5b%3A0x6d8b28f738fe7904!2sOliveira%20de%20Frades!5e0!3m2!1spt-PT!2spt!4v1716500000000!5m2!1spt-PT!2spt" 
+              class="w-full h-full absolute inset-0 border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de Atuação">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE NÓS / FAQS ==================== -->
+  <section id="sobre" class="py-24 bg-brand-green-50/20 border-b border-brand-green-100/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="space-y-6 mb-24 text-center">
+        <span>
+          <span class="text-sm font-semibold text-brand-green-600 uppercase tracking-widest bg-brand-green-100/60 px-3 py-1.5 rounded-full inline-block border border-brand-green-200">
+            Quem Somos
+          </span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-brand-green-900 tracking-tighter uppercase leading-none mt-4">
+          Aura Monte — Confiança no Cuidado da Terra
+        </h2>
+        <p class="text-slate-600 leading-relaxed font-light text-base sm:text-lg max-w-2xl mx-auto">
+          A <strong>Aura Monte - Unipessoal Lda.</strong> nasceu com a missão de oferecer soluções profissionais de silvicultura urbana, preventiva e de jardinagem nos concelhos de <strong>Oliveira de Frades, Vouzela, São Pedro do Sul e áreas limítrofes</strong>.
+        </p>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base max-w-2xl mx-auto">
+          Com o aumento constante das temperaturas de verão e a dureza das exigências legais em Portugal para evitar fogos florestais devastadores, os proprietários necessitam de um parceiro de confiança para manter os seus terrenos seguros. Prestamos serviços integrados, executando desbastes, limpezas de terrenos de elevado declive, queimadas e podas agrícolas com rigor mecânico e máxima segurança.
+        </p>
+
+        <!-- Selos de Qualidade -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 max-w-3xl mx-auto text-left">
+          <div class="flex gap-2.5 items-start bg-white/60 p-4 rounded-2xl border border-brand-green-100/50 shadow-sm">
+            <i data-lucide="check-circle" class="text-brand-green-600 w-5 h-5 shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="font-semibold text-sm text-brand-green-950">Tratoristas e Operadores Locais</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Profissionais dedicados que conhecem os solos e as espécies serranas.</p>
+            </div>
+          </div>
+          <div class="flex gap-2.5 items-start bg-white/60 p-4 rounded-2xl border border-brand-green-100/50 shadow-sm">
+            <i data-lucide="check-circle" class="text-brand-green-600 w-5 h-5 shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="font-semibold text-sm text-brand-green-950">Seguro de Atividade Completo</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Tranquilidade assegurada com apólice de responsabilidade ativa.</p>
+            </div>
+          </div>
+          <div class="flex gap-2.5 items-start bg-white/60 p-4 rounded-2xl border border-brand-green-100/50 shadow-sm">
+            <i data-lucide="check-circle" class="text-brand-green-600 w-5 h-5 shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="font-semibold text-sm text-brand-green-950">Gestão de Resíduos Ecológica</h4>
+              <p class="text-xs text-slate-500 mt-0.5">Trituramos e reaproveitamos biomassa para cobrir os solos e conter ervas daninhas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion (HTML nativo, rápido e responsivo) -->
+      <div class="bg-white p-6 sm:p-10 rounded-3xl border border-brand-green-100 shadow-sm">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <div class="inline-flex p-3 bg-brand-green-100 text-brand-green-700 rounded-2xl mb-4">
+            <i data-lucide="help-circle" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-display font-black text-brand-green-950 uppercase tracking-tighter">
+            Respostas às Perguntas Frequentes
+          </h3>
+          <p class="text-slate-500 text-sm sm:text-base mt-2">
+            Tire todas as suas dúvidas gerais sobre prazos de limpeza florestal rural e queimas de resíduos.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <details class="group bg-brand-green-50/20 border border-brand-green-100/65 rounded-2xl overflow-hidden transition-all">
+            <summary class="flex justify-between items-center p-5 font-semibold text-brand-green-950 cursor-pointer select-none">
+              <span>A Aura Monte trata de todas as licenças e autorizações de queimadas?</span>
+              <span class="p-1 px-2 border border-brand-green-100 bg-white rounded-lg">
+                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-green-600 transition-transform"></i>
+              </span>
+            </summary>
+            <div class="p-5 pt-0 border-t border-brand-green-50 text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
+              Sim! Para além de efetuarmos a queima controlada em segurança, realizamos o registo oficial na plataforma do ICNF e garantimos as comunicações necessárias às respetivas corporações de bombeiros e autoridades municipais, conforme exigido pelas leis de proteção civil.
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="group bg-brand-green-50/20 border border-brand-green-100/65 rounded-2xl overflow-hidden transition-all">
+            <summary class="flex justify-between items-center p-5 font-semibold text-brand-green-950 cursor-pointer select-none">
+              <span>Até que data é obrigatório limpar os terrenos em Portugal?</span>
+              <span class="p-1 px-2 border border-brand-green-100 bg-white rounded-lg">
+                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-green-600 transition-transform"></i>
+              </span>
+            </summary>
+            <div class="p-5 pt-0 border-t border-brand-green-50 text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
+              De acordo com a legislação em vigor em Portugal, a limpeza e gestão de combustível ao redor de casas e edifícios (num raio de 50 metros) deve ser obrigatoriamente efetuada até 15 de março (com possíveis extensões por parte do governo, normalmente até 30 de abril ou 15 de maio consoante o clima). Os proprietários que não cumpram arriscam coimas severas.
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="group bg-brand-green-50/20 border border-brand-green-100/65 rounded-2xl overflow-hidden transition-all">
+            <summary class="flex justify-between items-center p-5 font-semibold text-brand-green-950 cursor-pointer select-none">
+              <span>Como é calculado o orçamento para a limpeza de terrenos?</span>
+              <span class="p-1 px-2 border border-brand-green-100 bg-white rounded-lg">
+                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-green-600 transition-transform"></i>
+              </span>
+            </summary>
+            <div class="p-5 pt-0 border-t border-brand-green-50 text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
+              O orçamento baseia-se em três fatores principais: a área total em metros quadrados, a densidade e tipo de vegetação (mato rasteiro, silvas cerradas ou floresta pesada), e a inclinação ou dificuldade de acesso para as máquinas. Oferecemos uma avaliação e visita prévia sem qualquer custo ou compromisso.
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="group bg-brand-green-50/20 border border-brand-green-100/65 rounded-2xl overflow-hidden transition-all">
+            <summary class="flex justify-between items-center p-5 font-semibold text-brand-green-950 cursor-pointer select-none">
+              <span>A Aura Monte tem seguro de responsabilidade civil?</span>
+              <span class="p-1 px-2 border border-brand-green-100 bg-white rounded-lg">
+                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-green-600 transition-transform"></i>
+              </span>
+            </summary>
+            <div class="p-5 pt-0 border-t border-brand-green-50 text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
+              Sim. Todas as nossas atividades de desbaste florestal, trabalho em altura com árvores e queimas operadas possuem seguro de responsabilidade civil ativo para garantir total tranquilidade e segurança aos nossos clientes particulares e institucionais.
+            </div>
+          </details>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-slate-100 text-center space-y-3">
+          <h4 class="font-semibold text-brand-green-950 text-sm sm:text-base">
+            Ainda tem alguma dúvida particular sobre o seu terreno?
+          </h4>
+          <p class="text-xs text-slate-500 max-w-lg mx-auto leading-relaxed">
+            Cada propriedade em Lafões tem caraterísticas e declives únicos. Ligue-nos diretamente ou contacte-nos por e-mail para termos todo o prazer de o ajudar.
+          </p>
+          <div class="pt-2">
+            <a href="tel:+351927008602" class="inline-flex items-center gap-1.5 px-4 py-2 bg-brand-green-50 hover:bg-brand-green-100 text-brand-green-700 hover:text-brand-green-800 rounded-xl text-xs font-semibold tracking-wide border border-brand-green-100 transition-all">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+              <span>Ligar Direto: +351 927 008 602</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTATOS PRINCIPAIS (FIM) ==================== -->
+  <footer id="contactos" class="py-24 bg-brand-green-950 text-white scroll-mt-10 overflow-hidden relative">
+    
+    <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-green-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-sm font-semibold text-brand-gold-500 uppercase tracking-widest bg-brand-gold-500/10 px-3 py-1.5 rounded-full inline-block mb-3 border border-brand-gold-500/30">
+          Fale Connosco
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black tracking-tighter uppercase text-white">
+          Informações de Contacto
+        </h2>
+        <p class="mt-4 text-brand-green-100/85 text-sm sm:text-base">
+          Estamos inteiramente ao seu dispor pelos canais oficiais indicados abaixo. Contacte-nos diretamente para qualquer esclarecimento ou agendamento de serviços.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mb-16">
+        
+        <!-- Cartão Telemóvel / Email -->
+        <div class="p-8 bg-brand-green-900/40 border border-brand-green-800/60 rounded-3xl space-y-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-display font-semibold flex items-center gap-2 text-brand-gold-500 mb-6 pb-2 border-b border-brand-green-800/40 uppercase">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              Canais Diretos:
+            </h3>
+
+            <div class="space-y-4">
+              <!-- Chamada física -->
+              <a href="tel:+351927008602" class="flex gap-4 items-start p-3 hover:bg-brand-green-900/60 rounded-2xl transition-all group animate-pulse">
+                <div class="p-3 bg-brand-green-500/15 group-hover:bg-brand-green-500 text-brand-green-300 group-hover:text-white rounded-xl transition-all">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-brand-green-200/80 font-semibold font-mono">Telemóvel / WhatsApp</h4>
+                  <p class="text-lg font-bold text-white mt-0.5">+351 927 008 602</p>
+                  <span class="text-xs text-brand-green-400 font-medium">Atendimento especializado e direto</span>
+                </div>
+              </a>
+
+              <!-- Enviar E-mail -->
+              <a href="mailto:auramontegeral@gmail.com" class="flex gap-4 items-start p-3 hover:bg-brand-green-900/60 rounded-2xl transition-all group">
+                <div class="p-3 bg-brand-green-500/15 group-hover:bg-brand-green-500 text-brand-green-300 group-hover:text-white rounded-xl transition-all">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-brand-green-200/80 font-semibold font-mono">Email Geral</h4>
+                  <p class="text-base font-medium text-white mt-0.5">auramontegeral@gmail.com</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sede Fiscal e Horário de Funcionamento -->
+        <div class="p-8 bg-brand-green-900/40 border border-brand-green-800/60 rounded-3xl space-y-6 flex flex-col justify-between">
+          <div class="space-y-5">
+            <div class="flex gap-4 items-start p-3">
+              <div class="p-3 bg-brand-green-500/15 text-brand-green-300 rounded-xl">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs uppercase tracking-wider text-brand-green-200/80 font-semibold font-mono">Sede Fiscal</h4>
+                <p class="text-sm text-brand-green-100 mt-1 leading-relaxed">
+                  Oliveira de Frades, 3680-077 Oliveira de Frades, Portugal
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start p-3">
+              <div class="p-3 bg-brand-green-500/15 text-brand-green-300 rounded-xl">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs uppercase tracking-wider text-brand-green-200/80 font-semibold font-mono">Horário de Atendimento</h4>
+                <p class="text-sm text-brand-green-100 mt-0.5 font-medium">Segunda a Sábado: 08:00h às 19:00h</p>
+                <p class="text-xs text-brand-green-300/60 mt-1">Urgências e agendamentos específicos sob consulta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Selo de Firma Legalizada -->
+      <div class="max-w-2xl mx-auto p-6 bg-brand-green-900/60 border border-brand-green-800/40 rounded-3xl flex items-center gap-4">
+        <i data-lucide="shield-check" class="w-8 h-8 text-brand-gold-500 shrink-0"></i>
+        <div>
+          <h4 class="font-semibold text-white text-sm">Empresa Legalmente Registada</h4>
+          <p class="text-xs text-brand-green-100 mt-0.5 leading-relaxed">
+            Aura Monte - Unipessoal Lda. Contribuinte Fiscal Ativo em Portugal. Orçamentos faturados válidos para efeitos fiscais e de preenchimento legal.
+          </p>
+        </div>
+      </div>
+
+      <!-- Rodapé / Assinatura de Direitos Reservados -->
+      <div class="mt-24 pt-12 border-t border-brand-green-800/50 flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        <div class="space-y-2 text-center md:text-left">
+          <a href="#inicio" class="flex items-center gap-2 justify-center md:justify-start">
+            <svg class="h-7 w-7 text-brand-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22V12" />
+              <path d="m8 12 4-4 4 4" />
+              <path d="m7 16 5-5 5 5" />
+            </svg>
+            <span class="font-display font-black text-white text-base tracking-tight uppercase">AURA MONTE</span>
+          </a>
+          <p class="text-xs text-brand-green-300/80">
+            &copy; <span id="current-year"></span> Aura Monte - Unipessoal Lda. Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center md:items-end gap-3">
+          <div class="flex items-center gap-3">
+		  
+			
+		<a href="https://www.facebook.com/people/Aura-Monte-Unip-Lda/61589313599683/" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex p-2 rounded-xl text-[#1877f2] bg-[#e7f3ff] hover:bg-[#1877f2] hover:text-white transition-all border border-[#d8e7f9]" title="Visite a página oficial no Facebook">
+			<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+			</svg>
+		</a>	
+			
+			
+          </div>
+          <p class="text-brand-green-300 text-[11px] font-mono">
+            Oliveira de Frades, Portugal
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== CONTAINER DO MODAL DE SERVIÇOS ==================== -->
+  <div id="service-modal" class="fixed inset-0 bg-brand-green-950/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div id="modal-container" class="bg-white rounded-3xl max-w-2xl w-full border border-brand-green-100 shadow-2xl overflow-hidden relative" onclick="event.stopPropagation()">
+      
+      <div class="h-32 bg-gradient-to-tr from-brand-green-950 to-brand-green-700 relative p-6 flex items-end">
+        <button id="close-modal-btn" class="absolute top-4 right-4 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-all" aria-label="Fechar Modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div>
+          <span id="modal-badge" class="text-[10px] font-bold text-brand-gold-500 uppercase tracking-widest bg-white/10 px-2.5 py-1 rounded-full border border-white/20"></span>
+          <h3 id="modal-title" class="text-xl sm:text-2xl font-display font-black text-white uppercase tracking-tight mt-2"></h3>
+        </div>
+      </div>
+
+      <div class="p-6 sm:p-8 space-y-4">
+        <p id="modal-description" class="text-slate-600 text-sm sm:text-base leading-relaxed font-light"></p>
+        
+        <div class="pt-6 border-t border-slate-100 flex flex-col sm:flex-row justify-end gap-3">
+          <button id="close-modal-footer-btn" class="px-5 py-2.5 bg-slate-100 text-slate-700 text-sm font-semibold rounded-xl hover:bg-slate-200 transition-colors">
+            Voltar
+          </button>
+          <a href="#contactos" id="modal-contact-btn" class="px-5 py-2.5 bg-brand-gold-500 hover:bg-brand-gold-600 text-brand-green-950 text-sm font-bold rounded-xl text-center transition-colors flex items-center justify-center gap-1.5 shadow">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            Contactar
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==================== LOGICA DOS SCRIPTS INTERATIVOS ==================== -->
+  <script>
+    // Iniciar Ícones Lucide SVG no carregamento
+    lucide.createIcons();
+
+    // Insere o ano atual no rodapé dinamicamente
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // --- Encolhimento do Cabeçalho ao fazer Scroll
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.remove('py-5');
+        header.classList.add('py-2');
+      } else {
+        header.classList.remove('py-2');
+        header.classList.add('py-5');
+      }
+    });
+
+    // --- Controlos do Menu Mobile (Drawer)
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+    });
+
+    const hideMobileMenu = () => {
+      mobileMenu.classList.add('hidden');
+    };
+
+    closeMenuBtn.addEventListener('click', hideMobileMenu);
+    
+    // Fecha o menu quando clica em qualquer link
+    document.querySelectorAll('#mobile-menu a').forEach(item => {
+      item.addEventListener('click', hideMobileMenu);
+    });
+
+    // Fecha o menu fora da área do conteúdo
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) {
+        hideMobileMenu();
+      }
+    });
+
+    // --- Dados Dinâmicos para os Modais de Serviços
+    const servicesData = {
+      'limpeza-terrenos': {
+        title: 'Limpeza de Terrenos e Florestas',
+        badge: 'Prevenção de Incêndios',
+        description: 'Realizamos a gestão de combustível florestal e limpeza integral de terrenos e montes em estrito cumprimento com o regulamento do Decreto-Lei n.º 82/2021. Realizamos corte mecânico de silvados rústicos, roçagem de mato denso nas serras, abate de eucaliptos invasores ou secos, e trituração qualificada de resíduos florestais para a máxima proteção contra incêndios.'
+      },
+      'manutencao-jardins': {
+        title: 'Manutenção de Jardins',
+        badge: 'Particulares e Empresas',
+        description: 'Serviço que inclui tratamento e corte qualificado de relvados, adubação de espécimes, sementeiras, design paisagístico adaptado, combate e eliminação manual de ervas infestantes, manutenção e afinação de sistemas de rega, e replantação de flores ou arbustos adaptados ao ambiente térmico de Lafões.'
+      },
+      'areas-publicas': {
+        title: 'Manutenção de Áreas Públicas',
+        badge: 'Espaços Comunitários',
+        description: 'Trabalhos para juntas de freguesia, baldios e municípios: limpeza mecânica de bermas e taludes ao longo de estradas secundárias ou caminhos de terra rurais, desbaste de vegetação para preservação de trilhos pedonais de montanha, e segurança arbórea em parques de lazer e de merendas.'
+      },
+      'poda-arvores': {
+        title: 'Poda de Árvores de Alto Porte',
+        badge: 'Especializado e Seguro',
+        description: 'Cortes limpos direcionados a árvores de fruto camponesas, carvalhos centenários, ornamentais urbanas e podas de segurança de ramos com perigo crítico de queda física. Dispomos de operadores com arnês e cordas para escalada, garantindo intervenções completamente seguras e sem perigo de danos colaterais.'
+      },
+      'queimadas': {
+        title: 'Queimadas e Queimas Autorizadas',
+        badge: 'Operação Certificada',
+        description: 'Tratamos do agendamento legal obrigatório e realizamos as queimadas agrícolas e silvícolas preventivas dos resíduos florestais acumulados. Controlamos as condições meteorológicas em tempo real, delimitamos perímetros seguros com linhas húmidas, garantimos meios mecânicos de rescaldo de faúlhas, e reportamos às autoridades competentes.'
+      }
+    };
+
+    // --- Controlos do Modal de Detalhes
+    const serviceModal = document.getElementById('service-modal');
+    const modalBadge = document.getElementById('modal-badge');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+
+    document.querySelectorAll('.ver-mais-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const serviceId = btn.getAttribute('data-service-id');
+        const data = servicesData[serviceId];
+        if (data) {
+          modalBadge.textContent = data.badge;
+          modalTitle.textContent = data.title;
+          modalDescription.textContent = data.description;
+          
+          serviceModal.classList.remove('hidden');
+          serviceModal.classList.add('flex');
+        }
+      });
+    });
+
+    const hideServiceModal = () => {
+      serviceModal.classList.add('hidden');
+      serviceModal.classList.remove('flex');
+    };
+
+    document.getElementById('close-modal-btn').addEventListener('click', hideServiceModal);
+    document.getElementById('close-modal-footer-btn').addEventListener('click', hideServiceModal);
+    document.getElementById('modal-contact-btn').addEventListener('click', hideServiceModal);
+    
+    serviceModal.addEventListener('click', (e) => {
+      if (e.target === serviceModal) {
+        hideServiceModal();
+      }
+    });
+  </script>
+
+<script>
+// Script para corrigir o Scroll no Google Sites (iFrame)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault(); // Impede de abrir nova aba ou link estranho
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth', // Faz o deslize suave
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
