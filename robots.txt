@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://github.io
+Sitemap: https://rbn3030.github.io/Aura_Monte-Unipessoal_Lda_2026/sitemap.xml
